@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_dark">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/flipview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="horizontal"
+        android:layout_gravity="center">
+
+
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_back"/>
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_front"/>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GROS BOUTON DES FAMILLES"
+        android:layout_gravity="bottom"
+        android:textColor="@android:color/black"/>
+
+</FrameLayout>
